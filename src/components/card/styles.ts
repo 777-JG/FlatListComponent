@@ -7,7 +7,6 @@ export const styles = StyleSheet.create({
     borderRadius: 5,
     paddingHorizontal: 10,
     justifyContent: "center",
-    alignSelf: "spread",
   },
   name: {
     fontSize: 17,
