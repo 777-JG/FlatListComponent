@@ -13,8 +13,11 @@ type Props = TouchableOpacityProps & {
 
 export function Option({ icon, backgroundColor, ...rest }: Props) {
   return (
-    <TouchableOpacity style={[styles.container, { backgroundColor }]}>
-      <MaterialIcons name={icon} size={24} color="#fff" {...rest} />
+    <TouchableOpacity
+      style={[styles.container, { backgroundColor }]}
+      activeOpacity={0.7}
+    >
+      <MaterialIcons name={icon} size={26} color="#fff" {...rest} />
     </TouchableOpacity>
   );
 }

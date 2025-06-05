@@ -2,6 +2,7 @@ import { View, FlatList } from "react-native";
 import { styles } from "./styles";
 import { contacts } from "../../utils/contacts";
 import { Card } from "../../components/card";
+import { Option } from "../../components/option";
 import Swipeable from "react-native-gesture-handler/ReanimatedSwipeable";
 
 export function Home() {
@@ -11,7 +12,16 @@ export function Home() {
         data={contacts}
         keyExtractor={(item) => item.id}
         renderItem={({ item }) => (
-          <Swipeable>
+          <Swipeable
+            containerStyle={styles.swipeableContainer}
+            overshootRight={false}
+            renderRightActions={() => (
+              <View style={styles.rightActions}>
+                <Option icon="open-in-new" backgroundColor="#00b960" />
+                <Option icon="close" backgroundColor="#3E68D7" />
+              </View>
+            )}
+          >
             <Card name={item.name} email={item.email} />
           </Swipeable>
         )}

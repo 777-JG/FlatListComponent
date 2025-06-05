@@ -9,4 +9,12 @@ export const styles = StyleSheet.create({
   content: {
     gap: 16,
   },
+  rightActions: {
+    flexDirection: "row",
+    height: 70,
+  },
+  swipeableContainer: {
+    backgroundColor: "#1D1F27",
+    borderRadius: 6,
+  },
 });
