@@ -15,6 +15,8 @@ export function Home() {
           <Swipeable
             containerStyle={styles.swipeableContainer}
             overshootRight={false}
+            friction={2}
+            rightThreshold={20}
             renderRightActions={() => (
               <View style={styles.rightActions}>
                 <Option icon="open-in-new" backgroundColor="#00b960" />
