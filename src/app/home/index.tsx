@@ -20,7 +20,7 @@ export function Home() {
             renderRightActions={() => (
               <View style={styles.rightActions}>
                 <Option icon="open-in-new" backgroundColor="#00b960" />
-                <Option icon="close" backgroundColor="#3E68D7" />
+                <Option icon="close" backgroundColor="#fff" />
               </View>
             )}
           >
