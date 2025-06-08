@@ -5,17 +5,17 @@ export const styles = StyleSheet.create({
     height: 60,
     backgroundColor: "#1D1F27",
     borderRadius: 5,
-    paddingHorizontal: 10,
+    paddingHorizontal: 12,
     justifyContent: "center",
   },
   name: {
     fontSize: 17,
-    color: "#FFFFFF",
+    color: "#FFF",
     fontWeight: "600",
   },
   email: {
-    fontSize: 14,
+    fontSize: 16,
     color: "#A1A1AA",
-    fontWeight: "400",
+    fontWeight: "bold",
   },
 });
