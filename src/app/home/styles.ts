@@ -17,4 +17,8 @@ export const styles = StyleSheet.create({
     backgroundColor: "#1D1F27",
     borderRadius: 6,
   },
+  leftActions: {
+    flex: 1,
+    backgroundColor: "#E83D55",
+  },
 });

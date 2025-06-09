@@ -4,8 +4,14 @@ import { contacts } from "../../utils/contacts";
 import { Card } from "../../components/card";
 import { Option } from "../../components/option";
 import Swipeable from "react-native-gesture-handler/ReanimatedSwipeable";
+import { Directions } from "react-native-gesture-handler";
 
 export function Home() {
+  function onSwipeableWillOpen(direction: "left" | "right") {
+    if (direction === "left") {
+    }
+  }
+
   return (
     <View style={styles.container}>
       <FlatList
@@ -15,12 +21,16 @@ export function Home() {
           <Swipeable
             containerStyle={styles.swipeableContainer}
             overshootRight={false}
-            friction={2}
-            rightThreshold={20}
+            onSwipeableWillOpen={onSwipeableWillOpen}
             renderRightActions={() => (
               <View style={styles.rightActions}>
                 <Option icon="open-in-new" backgroundColor="#00b960" />
                 <Option icon="close" backgroundColor="#fff" />
+              </View>
+            )}
+            renderLeftActions={() => (
+              <View style={styles.leftActions}>
+                <Option icon="delete" backgroundColor="#E83D55" />
               </View>
             )}
           >
