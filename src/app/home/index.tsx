@@ -7,7 +7,6 @@ import { Option } from "../../components/option";
 import Swipeable, {
   SwipeableMethods,
 } from "react-native-gesture-handler/ReanimatedSwipeable";
-import { Directions } from "react-native-gesture-handler";
 
 export function Home() {
   const openSwepeableRef = useRef<SwipeableMethods | null>(null);
@@ -27,9 +26,9 @@ export function Home() {
 
           return (
             <Swipeable
-              ref={(swipeable) => (current = swipeable)}
               containerStyle={styles.swipeableContainer}
               overshootRight={false}
+              ref={(swipeable) => (current = swipeable)}
               onSwipeableWillOpen={onSwipeableWillOpen}
               renderRightActions={() => (
                 <View style={styles.rightActions}>
