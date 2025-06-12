@@ -1,0 +1,4 @@
+// este é um app simples que mostra como o componente swipeable funciona
+// e como ele pode ser usado para criar ações de deslizar em uma lista de contatos.
+// O componente Swipeable permite que você adicione ações de deslizar para a esquerda e para a direita em cada item da lista.
+// Você pode personalizar as ações de deslizar para atender às suas necessidades, como abrir um link ou excluir um contato.
