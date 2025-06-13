@@ -28,7 +28,9 @@ export function Home() {
             <Swipeable
               containerStyle={styles.swipeableContainer}
               overshootRight={false}
-              ref={(swipeable) => (current = swipeable)}
+              ref={(swipeable) => {
+                current = swipeable;
+              }}
               onSwipeableWillOpen={onSwipeableWillOpen}
               renderRightActions={() => (
                 <View style={styles.rightActions}>
