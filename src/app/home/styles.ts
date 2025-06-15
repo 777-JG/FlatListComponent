@@ -7,15 +7,15 @@ export const styles = StyleSheet.create({
     padding: 24,
   },
   content: {
-    gap: 16,
+    gap: 15,
   },
   rightActions: {
     flexDirection: "row",
-    height: 70,
+    height: 60,
   },
   swipeableContainer: {
     backgroundColor: "#1D1F27",
-    borderRadius: 6,
+    borderRadius: 10,
   },
   leftActions: {
     flex: 1,
